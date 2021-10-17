@@ -68,11 +68,13 @@
                     </ul>
                 </div>
                 <div class="modulo laranja">
-                    <h3>Módulo 05</h3>
+                    <h3>5. Array</h3>
                     <ul>
-                        <li><a href="#">Exercício A</a></li>
-                        <li><a href="#">Exercício B</a></li>
-                        <li><a href="#">Exercício C</a></li>
+                        <li><a href="exercicio.php?dir=array&file=basico">Arrays</a></li>
+                        <li><a href="exercicio.php?dir=array&file=mapa">Array Mapa</a></li>
+                        <li><a href="exercicio.php?dir=array&file=desafio_index">Desafio Index</a></li>
+                        <li><a href="exercicio.php?dir=array&file=desafio_meses">Desafio Meses</a></li>
+                        <li><a href="exercicio.php?dir=array&file=operacoes">Operações</a></li>
                     </ul>
                 </div>
                 <div class="modulo verde-escuro">
