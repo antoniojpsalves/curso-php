@@ -16,24 +16,33 @@ $dados = [
     ]
 ];
 
+// Adicionando mais um item no final do array de forma simples.
+$dados[] = [
+    "nome" => "Jefferson",
+    "idade" => 17,
+    "cidade" => "São Paulo"
+];
 
-//exibirDados($dados);
+
+// Adicionando mais um item dentro de um array interno
+
+$dados[2]['vizinho'] = "Chaves";
 
 
+
+//Removendo um item do array
+unset($dados[1]);
 
 /**
- * Antonio Alves 10/11
- * O php doc é esse comentário aqui. Serve pra em qualquer momento, e em qualquer lugar que essa função for chamada, exibir a informação dela. O que ela recebe, e o que retorna.
+ * Exibe os dados de um array
  * @param array $x
  * @return void
  */
 function exibirDados($x){
 
-    echo "<pre>"; //serve pra formatar um array na hr de exibir na tela.
+    echo "<pre>";
     print_r($x);
     echo "</pre>";
 }
 
-echo "<pre>"; //serve pra formatar um array na hr de exibir na tela.
-print_r($dados);
-echo "</pre>"; //serve pra formatar um array na hr de exibir na tela.
+exibirDados($dados);
