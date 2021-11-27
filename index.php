@@ -84,10 +84,10 @@
                     </ul>
                 </div>
                 <div class="modulo verde-escuro">
-                    <h3>Módulo 06</h3>
+                    <h3>Extruturas de repetição</h3>
                     <ul>
-                        <li><a href="#">Exercício A</a></li>
-                        <li><a href="#">Exercício B</a></li>
+                        <li><a href="exercicio.php?dir=repeticoes&file=for">Laço For</a></li>
+                        <li><a href="exercicio.php?dir=repeticoes&file=desafio_for">Desafio For</a></li>
                         <li><a href="#">Exercício C</a></li>
                     </ul>
                 </div>
