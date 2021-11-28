@@ -94,6 +94,7 @@
                         <li><a href="exercicio.php?dir=repeticoes&file=while">While e Do While</a></li>
                         <li><a href="exercicio.php?dir=repeticoes&file=desafio_tabela">Desafio Tabela #01</a></li>
                         <li><a href="exercicio.php?dir=repeticoes&file=desafio_tabela2">Desafio Tabela #02</a></li>
+                        <li><a href="exercicio.php?dir=repeticoes&file=desafio_tabela_res">Desafio Tabela #02 Res. Professor</a></li>
                     </ul>
                 </div>
                 <div class="modulo vermelho-escuro">
