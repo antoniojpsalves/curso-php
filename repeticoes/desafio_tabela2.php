@@ -2,9 +2,9 @@
 
 <form action="#" method="post">
     <label for="linhas">Número de linhas</label>
-    <input type="text" name="linhas" id="linhas">
+    <input type="text" name="linhas" value="<?=  $_POST['linhas'] ?? '' ?>" id="linhas">
     <label for="linhas">Número de colunas</label>
-    <input type="text" name="colunas" id="colunas">
+    <input type="text" name="colunas" value="<?= $_POST['colunas'] ?? '' ?>"id="colunas">
     <input type="submit" value="Criar">
 </form>
 
