@@ -106,12 +106,16 @@
                         <li><a href="exercicio.php?dir=funcoes&file=desafio_palindromo_res_prof">Desafio Palindromo Res. Prof</a></li>
                         <li><a href="exercicio.php?dir=funcoes&file=args_variaveis">Argumentos Variáveis</a></li>
                         <li><a href="exercicio.php?dir=funcoes&file=args_padrao">Argumento Padrão</a></li>
+                        <li><a href="exercicio.php?dir=funcoes&file=funcao_anonima">Função Anônima</a></li>
+                        <li><a href="exercicio.php?dir=funcoes&file=closure_callable">Closure e Callable</a></li>
+                        <li><a href="exercicio.php?dir=funcoes&file=recursividade">Recursividade</a></li>
+                    </ul>
                     </ul>
                 </div>
                 <div class="modulo azul-escuro">
-                    <h3>Módulo 08</h3>
+                    <h3>08 GUI</h3>
                     <ul>
-                        <li><a href="#">Exercício A</a></li>
+                        <li><a href="exercicio.php?dir=funcoes&file=gui">Página do gui</a></li>
                         <li><a href="#">Exercício B</a></li>
                         <li><a href="#">Exercício C</a></li>
                     </ul>
