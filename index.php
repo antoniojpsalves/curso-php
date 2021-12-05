@@ -116,11 +116,11 @@
                     </ul>
                 </div>
                 <div class="modulo azul-escuro">
-                    <h3>08 GUI</h3>
+                    <h3>08. Orientação à Objetos</h3>
                     <ul>
-                        <li><a href="exercicio.php?dir=funcoes&file=gui">Página do gui</a></li>
-                        <li><a href="#">Exercício B</a></li>
-                        <li><a href="#">Exercício C</a></li>
+                        <li><a href="exercicio.php?dir=classes_objetos&file=classe">Primeira Classe</a></li>
+                        <li><a href="exercicio.php?dir=classes_objetos&file=desafio_data">Desafio Data</a></li>
+                        <li><a href="exercicio.php?dir=classes_objetos&file=construtor_destrutor">Construtor e Destrutor</a></li>
                     </ul>
                 </div>
                 <div class="modulo roxo-escuro">
