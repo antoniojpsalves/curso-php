@@ -126,4 +126,20 @@
             <li><a href="exercicio.php?dir=includes&file=desafio">Desafio</a></li>
         </ul>
     </div>
+    <div class="modulo laranja-escuro">
+        <h3>10. Namespace</h3>
+        <ul>
+            <li><a href="exercicio.php?dir=namespace&file=basico">Exemplo Básico</a></li>
+            <li><a href="exercicio.php?dir=namespace&file=sub_namespace">Sub Namespace</a></li>
+            <li><a href="exercicio.php?dir=namespace&file=use_as">Use & As</a></li>
+        </ul>
+    </div>
+    <div class="modulo verde">
+        <h3>11. Tratamento de Erros</h3>
+        <ul>
+            <li><a href="exercicio.php?dir=tratamento_erro&file=try_catch">Try / Catch</a></li>
+            <li><a href="exercicio.php?dir=namespace&file=sub_namespace">Sub Namespace</a></li>
+            <li><a href="exercicio.php?dir=namespace&file=use_as">Use & As</a></li>
+        </ul>
+    </div>
 </nav>
