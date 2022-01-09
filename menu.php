@@ -138,8 +138,9 @@
         <h3>11. Tratamento de Erros</h3>
         <ul>
             <li><a href="exercicio.php?dir=tratamento_erro&file=try_catch">Try / Catch</a></li>
-            <li><a href="exercicio.php?dir=namespace&file=sub_namespace">Sub Namespace</a></li>
-            <li><a href="exercicio.php?dir=namespace&file=use_as">Use & As</a></li>
+            <li><a href="exercicio.php?dir=tratamento_erro&file=erros_personalizados">Erros Personalizados</a></li>
+            <li><a href="exercicio.php?dir=tratamento_erro&file=desafio_intdiv_teste">Desafio INTDIV</a></li>
+            <li><a href="exercicio.php?dir=tratamento_erro&file=gerenciador_erro">Error Handler</a></li>
         </ul>
     </div>
 </nav>
