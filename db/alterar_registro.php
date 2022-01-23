@@ -1,10 +1,34 @@
-<div class="titulo">Inserir Registro #02</div>
+<div class="titulo">Alterar Registro</div>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-<h2>Cadastro</h2>
+<h2>Alterar Registro</h2>
 
-<?php 
+<?php
+
+require_once 'conexao.php';
+$conexao = novaConexao();
+
+if(isset($_GET['codigo']) && $_GET['codigo'] != '') {
+    $sql = " SELECT * FROM cadastro WHERE id = ?";
+    $stmt = $conexao->prepare($sql);
+    $stmt->bind_param('i', $_GET['codigo']);
+
+    if($stmt->execute()) {
+        $resultado = $stmt->get_result();
+
+        if($resultado->num_rows > 0) {
+            $dados = $resultado->fetch_assoc();
+
+            if($dados['nascimento']) {
+                $dt = new DateTime($dados['nascimento']);
+                $dados['nascimento'] = $dt->Format('d/m/Y');
+            }
+        }
+    }
+}
+
+
 if(count($_POST) > 0) {
     // isset($_POST['nome'])
 
@@ -52,14 +76,10 @@ if(count($_POST) > 0) {
     //Fluxo de inserção seguro
 
     if(!count($erros)) {
-        require_once 'conexao.php';
+        
+        $sql = "UPDATE cadastro SET nome = ?, nascimento = ?, email = ?, site = ?, filhos = ?, 
+        salario = ? WHERE id = ?";
 
-        $sql = "INSERT INTO cadastro
-        ( nome, nascimento, email, site, filhos, salario ) 
-        VALUES 
-        (? , ?, ?, ?, ?, ?)";
-
-        $conexao = novaConexao();
 
         $stmt = $conexao->prepare($sql);
 
@@ -70,10 +90,11 @@ if(count($_POST) > 0) {
             $dados['email'],
             $dados['site'],
             $dados['filhos'],
-            $dados['salario']
+            $dados['salario'],
+            $dados['id']
         ];
 
-        $stmt->bind_param('ssssid', ...$params);
+        $stmt->bind_param('ssssidi', ...$params);
 
         if($stmt->execute()) {
             unset($dados);
@@ -84,7 +105,21 @@ if(count($_POST) > 0) {
 
 ?>
 
+<form action="/exercicio.php" method="get">
+    <input type="hidden" name="dir" value="db">
+    <input type="hidden" name="file" value="alterar_registro">
+    <div class="form-group row">
+        <div class="col-sm-10">
+            <input type="text" name="codigo" value="<?php if(isset($_GET['codigo'])){$_GET['codigo'];}?>" placeholder="Informe o códiogo para consulta" class="form-control">
+        </div>
+        <div class="col-sm-2">
+            <button class="btn btn-success mb-4">Consultar</button>
+        </div>
+    </div>
+</form>
+
 <form action="#" method="post">
+    <input type="hidden" name="id" value="<?= isset($dados) ? $dados['id']: '' ?>">
     <div class="form-row">
         <div class="form-group col-md-9">
             <label for="nome">Nome:</label>
